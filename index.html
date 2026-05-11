@@ -85,20 +85,30 @@
               </svg>
             </button>
 
-            <div class="absolute top-full left-0 w-full h-3"></div>
+            <!-- Invisible bridge agar hover tidak putus -->
+            <div class="absolute top-full left-0 w-full h-6"></div>
 
+            <!-- Dropdown -->
             <div
-              class="absolute top-full left-0 mt-1 hidden group-hover:flex flex-col bg-white shadow-xl rounded-xl p-2 text-sm min-w-[220px] z-50 border border-gray-100"
+              class="absolute top-full left-1/2 -translate-x-1/2 mt-4 hidden group-hover:flex flex-col bg-white shadow-xl rounded-xl p-2 text-sm min-w-[260px] z-50 border border-gray-100"
             >
-              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg">
+              <a href="#" class="px-4 py-3 hover:bg-gray-100 rounded-2xl">
                 Graphic Designer
               </a>
 
-              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg">
+              <a href="#" class="px-4 py-3 hover:bg-gray-100 rounded-2xl">
                 HR Recruiter
               </a>
 
-              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg">
+              <a href="#" class="px-4 py-3 hover:bg-gray-100 rounded-2xl">
+                Content Creator
+              </a>
+
+              <a href="#" class="px-4 py-3 hover:bg-gray-100 rounded-2xl">
+                Social Media Specialist
+              </a>
+
+              <a href="#" class="px-4 py-3 hover:bg-gray-100 rounded-2xl">
                 Web Developer
               </a>
             </div>
@@ -126,10 +136,10 @@
               </svg>
             </button>
 
-            <div class="absolute top-full left-0 w-full h-3"></div>
+            <div class="absolute top-full left-0 w-full h-6"></div>
 
             <div
-              class="absolute top-full left-0 mt-1 hidden group-hover:flex flex-col bg-white shadow-xl rounded-xl p-2 text-sm min-w-[220px] z-50 border border-gray-100"
+              class="absolute top-full left-0 mt-4 hidden group-hover:flex flex-col bg-white shadow-xl rounded-xl p-2 text-sm min-w-[220px] z-50 border border-gray-100"
             >
               <a
                 href="index.html"
@@ -158,6 +168,30 @@
               >
                 CV Analyzer
               </a>
+
+              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >AI Mentor</a
+              >
+
+              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >Career Recommendation</a
+              >
+
+              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >ATS Checker</a
+              >
+
+              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >Resume Scanner</a
+              >
+
+              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >LinkedIn Optimizer</a
+              >
+
+              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >Mock Test</a
+              >
             </div>
           </li>
 
@@ -222,8 +256,8 @@
           class="absolute bottom-0 left-0 right-0 bg-white rounded-t-[32px] translate-y-full transition-transform duration-300 flex flex-col"
           style="height: 90vh"
         >
-          <!-- Header -->
-          <div class="p-6 pb-4 border-b border-gray-100">
+          <!-- Header (tetap di atas) -->
+          <div class="p-6 pb-4 border-b border-gray-100 shrink-0">
             <!-- Handle -->
             <div class="flex justify-center mb-5">
               <div class="w-12 h-1.5 bg-gray-300 rounded-full"></div>
@@ -251,33 +285,22 @@
             </div>
           </div>
 
-          <div class="flex-1 px-6 pb-6 overflow-hidden">
+          <!-- Seluruh isi menu dapat di-scroll -->
+          <div class="flex-1 px-6 pb-6 overflow-y-auto custom-scroll">
             <div class="flex flex-col divide-y text-gray-700">
+              <!-- Home -->
               <a href="#" class="py-4 flex justify-between items-center">
                 Home
                 <span>→</span>
               </a>
 
+              <!-- Virtual Internship -->
               <details class="group">
                 <summary
                   class="py-4 flex justify-between items-center cursor-pointer list-none"
                 >
                   <span>Virtual Internship</span>
-
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
+                  <span>→</span>
                 </summary>
 
                 <div class="pb-4 pl-4 flex flex-col gap-2 text-gray-500">
@@ -287,37 +310,22 @@
                 </div>
               </details>
 
+              <!-- AI Tools -->
               <details class="group border-t border-gray-100">
                 <summary
                   class="py-4 flex justify-between items-center cursor-pointer list-none text-blue-600 font-medium"
                 >
                   <span>AI Tools</span>
-
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
+                  <span>→</span>
                 </summary>
 
-                <!-- SCROLLABLE SUBMENU -->
-                <div
-                  class="pb-4 pl-4 pr-2 flex flex-col gap-2 text-gray-500 max-h-52 overflow-y-auto custom-scroll"
-                >
+                <!-- Tidak ada scroll khusus di submenu -->
+                <div class="pb-4 pl-4 pr-2 flex flex-col gap-2 text-gray-500">
                   <a href="index.html" class="py-2">Growth Path</a>
 
-                  <a href="interview-simulation.html" class="py-2"
-                    >Interview Simulation</a
-                  >
+                  <a href="interview-simulation.html" class="py-2">
+                    Interview Simulation
+                  </a>
 
                   <a href="cv-maker.html" class="py-2">CV Maker</a>
 
@@ -325,13 +333,13 @@
 
                   <a href="portfolio.html" class="py-2">Portfolio</a>
 
-                  <a href="skill-certification.html" class="py-2"
-                    >Skill Certification</a
-                  >
+                  <a href="skill-certification.html" class="py-2">
+                    Skill Certification
+                  </a>
 
-                  <a href="website-portfolio.html" class="py-2"
-                    >Website Portfolio</a
-                  >
+                  <a href="website-portfolio.html" class="py-2">
+                    Website Portfolio
+                  </a>
 
                   <a href="#" class="py-2">AI Mentor</a>
 
@@ -347,11 +355,14 @@
                 </div>
               </details>
 
+              <!-- Job Portal -->
               <a href="#" class="py-4 flex justify-between items-center">
                 Job Portal
                 <span>→</span>
               </a>
             </div>
+
+            <!-- Language Selector -->
             <div
               class="mt-6 flex items-center justify-center gap-2 bg-gray-100 py-3 rounded-full"
             >
@@ -423,24 +434,37 @@
         }
 
         // Navbar berubah saat scroll
-        if (currentScroll > 20) {
-          navbar.classList.remove("rounded-full");
+        // Navbar berubah saat scroll (hanya untuk mobile < md / < 768px)
+        if (window.innerWidth < 768) {
+          if (currentScroll > 20) {
+            // Header menempel ke atas
+            header.classList.remove("top-4", "px-4");
+            header.classList.add("top-0", "px-0");
 
-          navbar.classList.add(
-            "rounded-2xl",
-            "max-w-5xl",
-            "shadow-xl",
-            "bg-white/95",
-          );
-        } else {
-          navbar.classList.add("rounded-full");
+            // Navbar full width dan bentuk kotak saat sticky
+            navbar.classList.remove("rounded-full", "max-w-6xl");
 
-          navbar.classList.remove(
-            "rounded-2xl",
-            "max-w-5xl",
-            "shadow-xl",
-            "bg-white/95",
-          );
+            navbar.classList.add(
+              "rounded-none",
+              "max-w-full",
+              "shadow-xl",
+              "bg-white/95",
+            );
+          } else {
+            // Kembalikan posisi awal
+            header.classList.remove("top-0", "px-0");
+            header.classList.add("top-4", "px-4");
+
+            // Kembalikan navbar ke bentuk awal
+            navbar.classList.remove(
+              "rounded-none",
+              "max-w-full",
+              "shadow-xl",
+              "bg-white/95",
+            );
+
+            navbar.classList.add("rounded-full", "max-w-6xl");
+          }
         }
 
         lastScroll = currentScroll;
@@ -515,7 +539,9 @@
           Lebih Terarah dan Terukur
         </h1>
 
-        <p class="mt-4 text-gray-600 text-base md:text-lg leading-relaxed max-w-[320px] md:max-w-none mx-auto">
+        <p
+          class="mt-4 text-gray-600 text-base md:text-lg leading-relaxed max-w-[320px] md:max-w-none mx-auto"
+        >
           Vita AI akan membimbingmu melalui setiap tahap pengembangan karier,
           dari penentuan tujuan hingga siap terhubung ke dunia kerja
         </p>

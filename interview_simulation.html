@@ -85,20 +85,30 @@
               </svg>
             </button>
 
-            <div class="absolute top-full left-0 w-full h-3"></div>
+            <!-- Invisible bridge agar hover tidak putus -->
+            <div class="absolute top-full left-0 w-full h-6"></div>
 
+            <!-- Dropdown -->
             <div
-              class="absolute top-full left-0 mt-1 hidden group-hover:flex flex-col bg-white shadow-xl rounded-xl p-2 text-sm min-w-[220px] z-50 border border-gray-100"
+              class="absolute top-full left-1/2 -translate-x-1/2 mt-4 hidden group-hover:flex flex-col bg-white shadow-xl rounded-xl p-2 text-sm min-w-[260px] z-50 border border-gray-100"
             >
-              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg">
+              <a href="#" class="px-4 py-3 hover:bg-gray-100 rounded-2xl">
                 Graphic Designer
               </a>
 
-              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg">
+              <a href="#" class="px-4 py-3 hover:bg-gray-100 rounded-2xl">
                 HR Recruiter
               </a>
 
-              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg">
+              <a href="#" class="px-4 py-3 hover:bg-gray-100 rounded-2xl">
+                Content Creator
+              </a>
+
+              <a href="#" class="px-4 py-3 hover:bg-gray-100 rounded-2xl">
+                Social Media Specialist
+              </a>
+
+              <a href="#" class="px-4 py-3 hover:bg-gray-100 rounded-2xl">
                 Web Developer
               </a>
             </div>
@@ -126,10 +136,10 @@
               </svg>
             </button>
 
-            <div class="absolute top-full left-0 w-full h-3"></div>
+            <div class="absolute top-full left-0 w-full h-6"></div>
 
             <div
-              class="absolute top-full left-0 mt-1 hidden group-hover:flex flex-col bg-white shadow-xl rounded-xl p-2 text-sm min-w-[220px] z-50 border border-gray-100"
+              class="absolute top-full left-0 mt-4 hidden group-hover:flex flex-col bg-white shadow-xl rounded-xl p-2 text-sm min-w-[220px] z-50 border border-gray-100"
             >
               <a
                 href="index.html"
@@ -158,6 +168,30 @@
               >
                 CV Analyzer
               </a>
+
+              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >AI Mentor</a
+              >
+
+              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >Career Recommendation</a
+              >
+
+              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >ATS Checker</a
+              >
+
+              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >Resume Scanner</a
+              >
+
+              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >LinkedIn Optimizer</a
+              >
+
+              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg"
+                >Mock Test</a
+              >
             </div>
           </li>
 
@@ -222,8 +256,8 @@
           class="absolute bottom-0 left-0 right-0 bg-white rounded-t-[32px] translate-y-full transition-transform duration-300 flex flex-col"
           style="height: 90vh"
         >
-          <!-- Header -->
-          <div class="p-6 pb-4 border-b border-gray-100">
+          <!-- Header (tetap di atas) -->
+          <div class="p-6 pb-4 border-b border-gray-100 shrink-0">
             <!-- Handle -->
             <div class="flex justify-center mb-5">
               <div class="w-12 h-1.5 bg-gray-300 rounded-full"></div>
@@ -251,33 +285,22 @@
             </div>
           </div>
 
-          <div class="flex-1 px-6 pb-6 overflow-hidden">
+          <!-- Seluruh isi menu dapat di-scroll -->
+          <div class="flex-1 px-6 pb-6 overflow-y-auto custom-scroll">
             <div class="flex flex-col divide-y text-gray-700">
+              <!-- Home -->
               <a href="#" class="py-4 flex justify-between items-center">
                 Home
                 <span>→</span>
               </a>
 
+              <!-- Virtual Internship -->
               <details class="group">
                 <summary
                   class="py-4 flex justify-between items-center cursor-pointer list-none"
                 >
                   <span>Virtual Internship</span>
-
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
+                  <span>→</span>
                 </summary>
 
                 <div class="pb-4 pl-4 flex flex-col gap-2 text-gray-500">
@@ -287,37 +310,22 @@
                 </div>
               </details>
 
+              <!-- AI Tools -->
               <details class="group border-t border-gray-100">
                 <summary
                   class="py-4 flex justify-between items-center cursor-pointer list-none text-blue-600 font-medium"
                 >
                   <span>AI Tools</span>
-
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
+                  <span>→</span>
                 </summary>
 
-                <!-- SCROLLABLE SUBMENU -->
-                <div
-                  class="pb-4 pl-4 pr-2 flex flex-col gap-2 text-gray-500 max-h-52 overflow-y-auto custom-scroll"
-                >
+                <!-- Tidak ada scroll khusus di submenu -->
+                <div class="pb-4 pl-4 pr-2 flex flex-col gap-2 text-gray-500">
                   <a href="index.html" class="py-2">Growth Path</a>
 
-                  <a href="interview-simulation.html" class="py-2"
-                    >Interview Simulation</a
-                  >
+                  <a href="interview-simulation.html" class="py-2">
+                    Interview Simulation
+                  </a>
 
                   <a href="cv-maker.html" class="py-2">CV Maker</a>
 
@@ -325,13 +333,13 @@
 
                   <a href="portfolio.html" class="py-2">Portfolio</a>
 
-                  <a href="skill-certification.html" class="py-2"
-                    >Skill Certification</a
-                  >
+                  <a href="skill-certification.html" class="py-2">
+                    Skill Certification
+                  </a>
 
-                  <a href="website-portfolio.html" class="py-2"
-                    >Website Portfolio</a
-                  >
+                  <a href="website-portfolio.html" class="py-2">
+                    Website Portfolio
+                  </a>
 
                   <a href="#" class="py-2">AI Mentor</a>
 
@@ -347,11 +355,14 @@
                 </div>
               </details>
 
+              <!-- Job Portal -->
               <a href="#" class="py-4 flex justify-between items-center">
                 Job Portal
                 <span>→</span>
               </a>
             </div>
+
+            <!-- Language Selector -->
             <div
               class="mt-6 flex items-center justify-center gap-2 bg-gray-100 py-3 rounded-full"
             >
@@ -423,24 +434,37 @@
         }
 
         // Navbar berubah saat scroll
-        if (currentScroll > 20) {
-          navbar.classList.remove("rounded-full");
+        // Navbar berubah saat scroll (hanya untuk mobile < md / < 768px)
+        if (window.innerWidth < 768) {
+          if (currentScroll > 20) {
+            // Header menempel ke atas
+            header.classList.remove("top-4", "px-4");
+            header.classList.add("top-0", "px-0");
 
-          navbar.classList.add(
-            "rounded-2xl",
-            "max-w-5xl",
-            "shadow-xl",
-            "bg-white/95",
-          );
-        } else {
-          navbar.classList.add("rounded-full");
+            // Navbar full width dan bentuk kotak saat sticky
+            navbar.classList.remove("rounded-full", "max-w-6xl");
 
-          navbar.classList.remove(
-            "rounded-2xl",
-            "max-w-5xl",
-            "shadow-xl",
-            "bg-white/95",
-          );
+            navbar.classList.add(
+              "rounded-none",
+              "max-w-full",
+              "shadow-xl",
+              "bg-white/95",
+            );
+          } else {
+            // Kembalikan posisi awal
+            header.classList.remove("top-0", "px-0");
+            header.classList.add("top-4", "px-4");
+
+            // Kembalikan navbar ke bentuk awal
+            navbar.classList.remove(
+              "rounded-none",
+              "max-w-full",
+              "shadow-xl",
+              "bg-white/95",
+            );
+
+            navbar.classList.add("rounded-full", "max-w-6xl");
+          }
         }
 
         lastScroll = currentScroll;
@@ -524,10 +548,25 @@
             <div
               class="w-10 h-10 flex items-center justify-center rounded-lg bg-blue-500 text-white mb-4"
             >
-              <svg class="w-6 h-6" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.4" d="M15 16H11L6.54999 18.96C5.88999 19.4 5 18.93 5 18.13V16C2 16 0 14 0 11V5C0 2 2 0 5 0H15C18 0 20 2 20 5V11C20 14 18 16 15 16Z" fill="#E9F2FE"/>
-                <path d="M9.9998 9.67971C9.5898 9.67971 9.2498 9.33971 9.2498 8.92971V8.71971C9.2498 7.55972 10.0998 6.98971 10.4198 6.76971C10.7898 6.51971 10.9098 6.34972 10.9098 6.08972C10.9098 5.58972 10.4998 5.17969 9.9998 5.17969C9.4998 5.17969 9.0898 5.58972 9.0898 6.08972C9.0898 6.49972 8.7498 6.83972 8.3398 6.83972C7.92984 6.83972 7.58984 6.49972 7.58984 6.08972C7.58984 4.75972 8.6698 3.67969 9.9998 3.67969C11.3298 3.67969 12.4098 4.75972 12.4098 6.08972C12.4098 7.22972 11.5698 7.79971 11.2598 8.00971C10.8698 8.26971 10.7498 8.43971 10.7498 8.71971V8.92971C10.7498 9.34971 10.4098 9.67971 9.9998 9.67971Z" fill="#E9F2FE"/>
-                <path d="M10 12.1699C9.58 12.1699 9.25 11.8299 9.25 11.4199C9.25 11.0099 9.59 10.6699 10 10.6699C10.41 10.6699 10.75 11.0099 10.75 11.4199C10.75 11.8299 10.42 12.1699 10 12.1699Z" fill="#E9F2FE"/>
+              <svg
+                class="w-6 h-6"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M15 16H11L6.54999 18.96C5.88999 19.4 5 18.93 5 18.13V16C2 16 0 14 0 11V5C0 2 2 0 5 0H15C18 0 20 2 20 5V11C20 14 18 16 15 16Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  d="M9.9998 9.67971C9.5898 9.67971 9.2498 9.33971 9.2498 8.92971V8.71971C9.2498 7.55972 10.0998 6.98971 10.4198 6.76971C10.7898 6.51971 10.9098 6.34972 10.9098 6.08972C10.9098 5.58972 10.4998 5.17969 9.9998 5.17969C9.4998 5.17969 9.0898 5.58972 9.0898 6.08972C9.0898 6.49972 8.7498 6.83972 8.3398 6.83972C7.92984 6.83972 7.58984 6.49972 7.58984 6.08972C7.58984 4.75972 8.6698 3.67969 9.9998 3.67969C11.3298 3.67969 12.4098 4.75972 12.4098 6.08972C12.4098 7.22972 11.5698 7.79971 11.2598 8.00971C10.8698 8.26971 10.7498 8.43971 10.7498 8.71971V8.92971C10.7498 9.34971 10.4098 9.67971 9.9998 9.67971Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  d="M10 12.1699C9.58 12.1699 9.25 11.8299 9.25 11.4199C9.25 11.0099 9.59 10.6699 10 10.6699C10.41 10.6699 10.75 11.0099 10.75 11.4199C10.75 11.8299 10.42 12.1699 10 12.1699Z"
+                  fill="#E9F2FE"
+                />
               </svg>
             </div>
             <h3 class="font-semibold">Kurang latihan menjawab pertanyaan</h3>
@@ -543,10 +582,25 @@
             <div
               class="w-10 h-10 flex items-center justify-center rounded-lg bg-blue-500 text-white mb-4"
             >
-              <svg class="w-6 h-6" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.4" d="M18.17 6.58003V13.42C18.17 14.54 17.57 15.58 16.6 16.15L10.66 19.58C9.69003 20.14 8.49003 20.14 7.51003 19.58L1.57 16.15C0.6 15.59 0 14.55 0 13.42V6.58003C0 5.46003 0.6 4.41999 1.57 3.84999L7.51003 0.42C8.48003 -0.14 9.68003 -0.14 10.66 0.42L16.6 3.84999C17.57 4.41999 18.17 5.45003 18.17 6.58003Z" fill="#E9F2FE"/>
-                <path d="M9.08979 9.9998C10.3766 9.9998 11.4198 8.9566 11.4198 7.6698C11.4198 6.38298 10.3766 5.33984 9.08979 5.33984C7.80299 5.33984 6.75977 6.38298 6.75977 7.6698C6.75977 8.9566 7.80299 9.9998 9.08979 9.9998Z" fill="#E9F2FE"/>
-                <path d="M11.77 14.6594C12.58 14.6594 13.05 13.7594 12.6 13.0894C11.92 12.0794 10.6 11.3994 9.09003 11.3994C7.58003 11.3994 6.26001 12.0794 5.58001 13.0894C5.13001 13.7594 5.60001 14.6594 6.41001 14.6594H11.77Z" fill="#E9F2FE"/>
+              <svg
+                class="w-6 h-6"
+                viewBox="0 0 19 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M18.17 6.58003V13.42C18.17 14.54 17.57 15.58 16.6 16.15L10.66 19.58C9.69003 20.14 8.49003 20.14 7.51003 19.58L1.57 16.15C0.6 15.59 0 14.55 0 13.42V6.58003C0 5.46003 0.6 4.41999 1.57 3.84999L7.51003 0.42C8.48003 -0.14 9.68003 -0.14 10.66 0.42L16.6 3.84999C17.57 4.41999 18.17 5.45003 18.17 6.58003Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  d="M9.08979 9.9998C10.3766 9.9998 11.4198 8.9566 11.4198 7.6698C11.4198 6.38298 10.3766 5.33984 9.08979 5.33984C7.80299 5.33984 6.75977 6.38298 6.75977 7.6698C6.75977 8.9566 7.80299 9.9998 9.08979 9.9998Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  d="M11.77 14.6594C12.58 14.6594 13.05 13.7594 12.6 13.0894C11.92 12.0794 10.6 11.3994 9.09003 11.3994C7.58003 11.3994 6.26001 12.0794 5.58001 13.0894C5.13001 13.7594 5.60001 14.6594 6.41001 14.6594H11.77Z"
+                  fill="#E9F2FE"
+                />
               </svg>
             </div>
             <h3 class="font-semibold">Gugup saat melakukan interview</h3>
@@ -562,10 +616,25 @@
             <div
               class="w-10 h-10 flex items-center justify-center rounded-lg bg-blue-500 text-white mb-4"
             >
-              <svg class="w-6 h-6" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.4" d="M18.17 6.58003V13.42C18.17 14.54 17.57 15.58 16.6 16.15L10.66 19.58C9.69003 20.14 8.49003 20.14 7.51003 19.58L1.57 16.15C0.6 15.59 0 14.55 0 13.42V6.58003C0 5.46003 0.6 4.41999 1.57 3.84999L7.51003 0.42C8.48003 -0.14 9.68003 -0.14 10.66 0.42L16.6 3.84999C17.57 4.41999 18.17 5.45003 18.17 6.58003Z" fill="#E9F2FE"/>
-                <path d="M9.08979 9.9998C10.3766 9.9998 11.4198 8.9566 11.4198 7.6698C11.4198 6.38298 10.3766 5.33984 9.08979 5.33984C7.80299 5.33984 6.75977 6.38298 6.75977 7.6698C6.75977 8.9566 7.80299 9.9998 9.08979 9.9998Z" fill="#E9F2FE"/>
-                <path d="M11.77 14.6594C12.58 14.6594 13.05 13.7594 12.6 13.0894C11.92 12.0794 10.6 11.3994 9.09003 11.3994C7.58003 11.3994 6.26001 12.0794 5.58001 13.0894C5.13001 13.7594 5.60001 14.6594 6.41001 14.6594H11.77Z" fill="#E9F2FE"/>
+              <svg
+                class="w-6 h-6"
+                viewBox="0 0 19 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M18.17 6.58003V13.42C18.17 14.54 17.57 15.58 16.6 16.15L10.66 19.58C9.69003 20.14 8.49003 20.14 7.51003 19.58L1.57 16.15C0.6 15.59 0 14.55 0 13.42V6.58003C0 5.46003 0.6 4.41999 1.57 3.84999L7.51003 0.42C8.48003 -0.14 9.68003 -0.14 10.66 0.42L16.6 3.84999C17.57 4.41999 18.17 5.45003 18.17 6.58003Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  d="M9.08979 9.9998C10.3766 9.9998 11.4198 8.9566 11.4198 7.6698C11.4198 6.38298 10.3766 5.33984 9.08979 5.33984C7.80299 5.33984 6.75977 6.38298 6.75977 7.6698C6.75977 8.9566 7.80299 9.9998 9.08979 9.9998Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  d="M11.77 14.6594C12.58 14.6594 13.05 13.7594 12.6 13.0894C11.92 12.0794 10.6 11.3994 9.09003 11.3994C7.58003 11.3994 6.26001 12.0794 5.58001 13.0894C5.13001 13.7594 5.60001 14.6594 6.41001 14.6594H11.77Z"
+                  fill="#E9F2FE"
+                />
               </svg>
             </div>
             <h3 class="font-semibold">Kesulitan Menjelaskan Pengalaman</h3>
@@ -582,12 +651,33 @@
             <div
               class="w-10 h-10 flex items-center justify-center rounded-lg bg-blue-500 text-white mb-4"
             >
-              <svg class="w-6 h-6" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.4" d="M14.19 0H5.81C2.17 0 0 2.17 0 5.81V14.19C0 17.83 2.17 20 5.81 20H14.19C17.83 20 20 17.83 20 14.19V5.81C20 2.17 17.83 0 14.19 0Z" fill="#E9F2FE"/>
-                <path d="M16.3106 6.86914C16.3106 7.27914 15.9806 7.61914 15.5606 7.61914H10.3106C9.90055 7.61914 9.56055 7.27914 9.56055 6.86914C9.56055 6.45914 9.90055 6.11914 10.3106 6.11914H15.5606C15.9806 6.11914 16.3106 6.45914 16.3106 6.86914Z" fill="#E9F2FE"/>
-                <path d="M7.97055 5.90055L5.72055 8.15055C5.57055 8.30055 5.38055 8.37055 5.19055 8.37055C5.00055 8.37055 4.80055 8.30055 4.66055 8.15055L3.91055 7.40055C3.61055 7.11055 3.61055 6.63055 3.91055 6.34055C4.20055 6.05055 4.67055 6.05055 4.97055 6.34055L5.19055 6.56055L6.91055 4.84055C7.20055 4.55055 7.67055 4.55055 7.97055 4.84055C8.26055 5.13055 8.26055 5.61055 7.97055 5.90055Z" fill="#E9F2FE"/>
-                <path d="M16.3106 13.8691C16.3106 14.2791 15.9806 14.6191 15.5606 14.6191H10.3106C9.90055 14.6191 9.56055 14.2791 9.56055 13.8691C9.56055 13.4591 9.90055 13.1191 10.3106 13.1191H15.5606C15.9806 13.1191 16.3106 13.4591 16.3106 13.8691Z" fill="#E9F2FE"/>
-                <path d="M7.97055 12.9004L5.72055 15.1505C5.57055 15.3005 5.38055 15.3704 5.19055 15.3704C5.00055 15.3704 4.80055 15.3005 4.66055 15.1505L3.91055 14.4005C3.61055 14.1105 3.61055 13.6304 3.91055 13.3404C4.20055 13.0505 4.67055 13.0505 4.97055 13.3404L5.19055 13.5604L6.91055 11.8405C7.20055 11.5505 7.67055 11.5505 7.97055 11.8405C8.26055 12.1304 8.26055 12.6104 7.97055 12.9004Z" fill="#E9F2FE"/>
+              <svg
+                class="w-6 h-6"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M14.19 0H5.81C2.17 0 0 2.17 0 5.81V14.19C0 17.83 2.17 20 5.81 20H14.19C17.83 20 20 17.83 20 14.19V5.81C20 2.17 17.83 0 14.19 0Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  d="M16.3106 6.86914C16.3106 7.27914 15.9806 7.61914 15.5606 7.61914H10.3106C9.90055 7.61914 9.56055 7.27914 9.56055 6.86914C9.56055 6.45914 9.90055 6.11914 10.3106 6.11914H15.5606C15.9806 6.11914 16.3106 6.45914 16.3106 6.86914Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  d="M7.97055 5.90055L5.72055 8.15055C5.57055 8.30055 5.38055 8.37055 5.19055 8.37055C5.00055 8.37055 4.80055 8.30055 4.66055 8.15055L3.91055 7.40055C3.61055 7.11055 3.61055 6.63055 3.91055 6.34055C4.20055 6.05055 4.67055 6.05055 4.97055 6.34055L5.19055 6.56055L6.91055 4.84055C7.20055 4.55055 7.67055 4.55055 7.97055 4.84055C8.26055 5.13055 8.26055 5.61055 7.97055 5.90055Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  d="M16.3106 13.8691C16.3106 14.2791 15.9806 14.6191 15.5606 14.6191H10.3106C9.90055 14.6191 9.56055 14.2791 9.56055 13.8691C9.56055 13.4591 9.90055 13.1191 10.3106 13.1191H15.5606C15.9806 13.1191 16.3106 13.4591 16.3106 13.8691Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  d="M7.97055 12.9004L5.72055 15.1505C5.57055 15.3005 5.38055 15.3704 5.19055 15.3704C5.00055 15.3704 4.80055 15.3005 4.66055 15.1505L3.91055 14.4005C3.61055 14.1105 3.61055 13.6304 3.91055 13.3404C4.20055 13.0505 4.67055 13.0505 4.97055 13.3404L5.19055 13.5604L6.91055 11.8405C7.20055 11.5505 7.67055 11.5505 7.97055 11.8405C8.26055 12.1304 8.26055 12.6104 7.97055 12.9004Z"
+                  fill="#E9F2FE"
+                />
               </svg>
             </div>
             <h3 class="font-semibold">Jawaban tidak terstruktur dengan baik</h3>
