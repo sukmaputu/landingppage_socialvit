@@ -1,0 +1,927 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vita AI – Growth Path</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <style>
+      /* Hide default summary arrow */
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      /* Custom Scrollbar */
+      .custom-scroll::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      .custom-scroll::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      .custom-scroll::-webkit-scrollbar-thumb {
+        background: #d1d5db;
+        border-radius: 999px;
+      }
+
+      .custom-scroll::-webkit-scrollbar-thumb:hover {
+        background: #9ca3af;
+      }
+    </style>
+
+    <header
+      id="mainHeader"
+      class="fixed top-4 left-0 right-0 z-50 flex justify-center px-4 font-[Inter] transition-all duration-300"
+    >
+      <nav
+        id="navbar"
+        class="w-full max-w-6xl flex items-center justify-between bg-white/90 backdrop-blur-md border border-gray-200 shadow-lg rounded-full px-6 py-3 transition-all duration-300"
+      >
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <img src="./img/logo.png" alt="logo" class="h-7" />
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul
+          class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600"
+        >
+          <!-- Home -->
+          <li>
+            <a href="#" class="hover:text-blue-600 transition">Home</a>
+          </li>
+
+          <!-- Virtual Internship Dropdown -->
+          <li class="relative group">
+            <button
+              class="flex items-center gap-1 hover:text-blue-600 transition"
+            >
+              Virtual Internship
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+
+            <div class="absolute top-full left-0 w-full h-3"></div>
+
+            <div
+              class="absolute top-full left-0 mt-1 hidden group-hover:flex flex-col bg-white shadow-xl rounded-xl p-2 text-sm min-w-[220px] z-50 border border-gray-100"
+            >
+              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg">
+                Graphic Designer
+              </a>
+
+              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg">
+                HR Recruiter
+              </a>
+
+              <a href="#" class="px-4 py-2 hover:bg-gray-100 rounded-lg">
+                Web Developer
+              </a>
+            </div>
+          </li>
+
+          <!-- AI Tools Dropdown -->
+          <li class="relative group">
+            <button
+              class="flex items-center gap-1 hover:text-blue-600 font-semibold transition"
+            >
+              AI Tools
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+
+            <div class="absolute top-full left-0 w-full h-3"></div>
+
+            <div
+              class="absolute top-full left-0 mt-1 hidden group-hover:flex flex-col bg-white shadow-xl rounded-xl p-2 text-sm min-w-[220px] z-50 border border-gray-100"
+            >
+              <a
+                href="index.html"
+                class="px-4 py-2 hover:bg-gray-100 rounded-lg"
+              >
+                Growth Path
+              </a>
+
+              <a
+                href="interview_simulation.html"
+                class="px-4 py-2 hover:bg-gray-100 rounded-lg"
+              >
+                Interview Simulation
+              </a>
+
+              <a
+                href="interview_cvmaker.html"
+                class="px-4 py-2 hover:bg-gray-100 rounded-lg"
+              >
+                CV Maker
+              </a>
+
+              <a
+                href="ai_cv_analyzer.html"
+                class="px-4 py-2 hover:bg-gray-100 rounded-lg"
+              >
+                CV Analyzer
+              </a>
+            </div>
+          </li>
+
+          <!-- Job Portal -->
+          <li>
+            <a href="#" class="hover:text-blue-600 transition">Job Portal</a>
+          </li>
+        </ul>
+
+        <!-- Right Side -->
+        <div class="flex items-center gap-3">
+          <!-- Language -->
+          <div
+            class="hidden md:flex items-center gap-2 bg-gray-100 px-3 py-1 rounded-full text-xs font-medium"
+          >
+            <div
+              class="w-5 h-5 rounded-full overflow-hidden border border-gray-300 flex flex-col"
+            >
+              <div class="flex-1 bg-red-500"></div>
+              <div class="flex-1 bg-white"></div>
+            </div>
+
+            <span>ID</span>
+          </div>
+
+          <!-- Desktop Button -->
+          <a
+            href="#"
+            class="hidden md:block px-4 py-2 bg-gradient-to-b from-blue-500 to-blue-600 text-white rounded-xl text-sm font-medium hover:opacity-90"
+          >
+            Daftar
+          </a>
+
+          <!-- Hamburger -->
+          <button
+            id="menuBtn"
+            class="md:hidden flex items-center justify-center w-10 h-10 rounded-full bg-gray-100"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6 text-gray-700"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- MOBILE MENU -->
+      <div id="mobileMenu" class="fixed inset-0 bg-black/40 z-50 hidden">
+        <!-- Bottom Sheet -->
+        <div
+          id="menuContent"
+          class="absolute bottom-0 left-0 right-0 bg-white rounded-t-[32px] translate-y-full transition-transform duration-300 flex flex-col"
+          style="height: 90vh"
+        >
+          <!-- Header -->
+          <div class="p-6 pb-4 border-b border-gray-100">
+            <!-- Handle -->
+            <div class="flex justify-center mb-5">
+              <div class="w-12 h-1.5 bg-gray-300 rounded-full"></div>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <img src="./img/logo.png" alt="logo" class="h-7" />
+
+              <button id="closeMenu">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6 text-gray-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="flex-1 px-6 pb-6 overflow-hidden">
+            <div class="flex flex-col divide-y text-gray-700">
+              <a href="#" class="py-4 flex justify-between items-center">
+                Home
+                <span>→</span>
+              </a>
+
+              <details class="group">
+                <summary
+                  class="py-4 flex justify-between items-center cursor-pointer list-none"
+                >
+                  <span>Virtual Internship</span>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </summary>
+
+                <div class="pb-4 pl-4 flex flex-col gap-2 text-gray-500">
+                  <a href="#" class="py-2">Graphic Designer</a>
+                  <a href="#" class="py-2">HR Recruiter</a>
+                  <a href="#" class="py-2">Web Developer</a>
+                </div>
+              </details>
+
+              <details class="group border-t border-gray-100">
+                <summary
+                  class="py-4 flex justify-between items-center cursor-pointer list-none text-blue-600 font-medium"
+                >
+                  <span>AI Tools</span>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </summary>
+
+                <!-- SCROLLABLE SUBMENU -->
+                <div
+                  class="pb-4 pl-4 pr-2 flex flex-col gap-2 text-gray-500 max-h-52 overflow-y-auto custom-scroll"
+                >
+                  <a href="index.html" class="py-2">Growth Path</a>
+
+                  <a href="interview-simulation.html" class="py-2"
+                    >Interview Simulation</a
+                  >
+
+                  <a href="cv-maker.html" class="py-2">CV Maker</a>
+
+                  <a href="cv-analyzer.html" class="py-2">CV Analyzer</a>
+
+                  <a href="portfolio.html" class="py-2">Portfolio</a>
+
+                  <a href="skill-certification.html" class="py-2"
+                    >Skill Certification</a
+                  >
+
+                  <a href="website-portfolio.html" class="py-2"
+                    >Website Portfolio</a
+                  >
+
+                  <a href="#" class="py-2">AI Mentor</a>
+
+                  <a href="#" class="py-2">Career Recommendation</a>
+
+                  <a href="#" class="py-2">ATS Checker</a>
+
+                  <a href="#" class="py-2">Resume Scanner</a>
+
+                  <a href="#" class="py-2">LinkedIn Optimizer</a>
+
+                  <a href="#" class="py-2">Mock Test</a>
+                </div>
+              </details>
+
+              <a href="#" class="py-4 flex justify-between items-center">
+                Job Portal
+                <span>→</span>
+              </a>
+            </div>
+            <div
+              class="mt-6 flex items-center justify-center gap-2 bg-gray-100 py-3 rounded-full"
+            >
+              <div
+                class="w-5 h-5 rounded-full overflow-hidden border border-gray-300 flex flex-col"
+              >
+                <div class="flex-1 bg-red-500"></div>
+                <div class="flex-1 bg-white"></div>
+              </div>
+
+              <span>Indonesia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const closeMenu = document.getElementById("closeMenu");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const menuContent = document.getElementById("menuContent");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("hidden");
+
+        requestAnimationFrame(() => {
+          menuContent.classList.remove("translate-y-full");
+        });
+
+        document.body.classList.add("overflow-hidden");
+      });
+
+      function closeMobileMenu() {
+        menuContent.classList.add("translate-y-full");
+
+        setTimeout(() => {
+          mobileMenu.classList.add("hidden");
+        }, 300);
+
+        document.body.classList.remove("overflow-hidden");
+      }
+
+      closeMenu.addEventListener("click", closeMobileMenu);
+
+      mobileMenu.addEventListener("click", (e) => {
+        if (e.target === mobileMenu) {
+          closeMobileMenu();
+        }
+      });
+
+      // =========================
+      // HEADER SCROLL EFFECT
+      // =========================
+
+      const header = document.getElementById("mainHeader");
+      const navbar = document.getElementById("navbar");
+
+      let lastScroll = 0;
+
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+
+        // Hide saat scroll bawah
+        if (currentScroll > lastScroll && currentScroll > 80) {
+          header.classList.add("-translate-y-32");
+        } else {
+          // Show saat scroll atas
+          header.classList.remove("-translate-y-32");
+        }
+
+        // Navbar berubah saat scroll
+        if (currentScroll > 20) {
+          navbar.classList.remove("rounded-full");
+
+          navbar.classList.add(
+            "rounded-2xl",
+            "max-w-5xl",
+            "shadow-xl",
+            "bg-white/95",
+          );
+        } else {
+          navbar.classList.add("rounded-full");
+
+          navbar.classList.remove(
+            "rounded-2xl",
+            "max-w-5xl",
+            "shadow-xl",
+            "bg-white/95",
+          );
+        }
+
+        lastScroll = currentScroll;
+      });
+    </script>
+
+    <section
+      class="relative flex flex-col items-center text-center px-6 pt-24 pb-20 overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 bg-[url('./img/union.webp')] opacity-40"
+      ></div>
+
+      <div class="relative z-10 max-w-3xl">
+        <p
+          class="text-2xl md:text-3xl text-gray-800 font-light font-['DM_Sans']"
+        >
+          Bangun Personal Branding dengan
+        </p>
+
+        <h1
+          class="text-5xl md:text-7xl font-bold bg-gradient-to-l from-[#FFD22F] via-[#FEB013] via-[#FE9900] to-[#FF4D74] bg-clip-text text-transparent leading-tight font-['DM_Sans']"
+        >
+          Personal Website
+        </h1>
+
+        <p class="mt-4 text-gray-600 text-base md:text-lg leading-relaxed">
+          Tampilkan profil, pengalaman, dan karya terbaikmu dalam satu website
+          profesional yang siap dibagikan.
+        </p>
+
+        <div class="mt-6">
+          <a
+            href="#"
+            class="inline-block min-w-[260px] px-10 py-3 text-center bg-gradient-to-b from-blue-500 to-blue-600 text-white font-semibold rounded-xl shadow-lg hover:opacity-90 transition"
+          >
+            Buat Website
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="absolute inset-0 flex justify-center items-center pointer-events-none"
+      >
+        <div
+          class="w-[900px] h-[500px] bg-gradient-to-r from-[#FF4D74] via-[#FE9900] to-[#FEB013] opacity-20 blur-3xl rounded-full"
+        ></div>
+      </div>
+
+      <div class="relative z-10 mt-12 w-full max-w-5xl">
+        <img
+          src="./img/web_builder/mockup_1.webp"
+          alt="mockup"
+          class="w-full object-contain"
+        />
+      </div>
+    </section>
+
+    <section
+      class="relative py-16 px-6 bg-gradient-to-r from-blue-600 to-blue-400 text-white overflow-hidden"
+    >
+      <div class="max-w-6xl mx-auto text-center">
+        <!-- Title -->
+        <h2 class="text-3xl md:text-5xl font-bold">
+          Kenapa Punya Personal Website itu
+          <span class="text-yellow-400">Penting?</span>
+        </h2>
+
+        <!-- Subtitle -->
+        <p class="mt-4 text-blue-100 max-w-2xl mx-auto">
+          Banyak recruiter ingin melihat lebih dari sekadar CV, tetapi sering
+          terjadi masalah seperti:
+        </p>
+
+        <!-- Cards -->
+        <div class="mt-10 grid md:grid-cols-2 gap-6">
+          <!-- Card 1 -->
+          <div
+            class="bg-white text-gray-800 rounded-xl p-6 text-left shadow-md"
+          >
+            <div
+              class="w-10 h-10 flex items-center justify-center rounded-lg bg-blue-500 text-white mb-4"
+            >
+              <svg
+                class="w-6 h-6"
+                viewBox="0 0 21 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.7998 19.7698L20.0798 19.0498C20.4498 18.4898 20.6698 17.8098 20.6698 17.0898C20.6698 15.1098 19.0698 13.5098 17.0898 13.5098C15.1098 13.5098 13.5098 15.1098 13.5098 17.0898C13.5098 19.0698 15.1098 20.6698 17.0898 20.6698C17.8198 20.6698 18.4898 20.4498 19.0498 20.0798L19.7698 20.7998C19.9098 20.9398 20.0998 21.0098 20.2798 21.0098C20.4698 21.0098 20.6498 20.9398 20.7898 20.7998C21.0798 20.5098 21.0798 20.0498 20.7998 19.7698Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  opacity="0.4"
+                  d="M1.03953 13.6406C1.03953 13.6706 1.01953 13.7106 1.01953 13.7406C1.93953 15.5806 3.43954 17.0905 5.27954 18.0005C5.30954 18.0005 5.34953 17.9806 5.37953 17.9806C5.03953 16.8206 4.77953 15.6305 4.58953 14.4405C3.38953 14.2405 2.19953 13.9806 1.03953 13.6406Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  opacity="0.4"
+                  d="M18.0798 5.43921C17.1398 3.46921 15.5498 1.87922 13.5898 0.949219C13.9498 2.13922 14.2498 3.35923 14.4498 4.57923C15.6698 4.77923 16.8898 5.06921 18.0798 5.43921Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  opacity="0.4"
+                  d="M0.939941 5.4393C2.13994 5.0793 3.35995 4.77932 4.57995 4.57932C4.77995 3.38932 5.02994 2.20932 5.36994 1.04932C5.33994 1.04932 5.29994 1.0293 5.26994 1.0293C3.38994 1.9593 1.85994 3.52931 0.939941 5.4393Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  opacity="0.4"
+                  d="M12.83 4.37C12.59 3.07 12.29 1.77001 11.86 0.510006C11.84 0.440006 11.84 0.380016 11.83 0.300016C11.09 0.120016 10.31 0 9.50996 0C8.69994 0 7.92994 0.110016 7.17994 0.300016C7.16994 0.370016 7.17994 0.430006 7.15994 0.510006C6.73994 1.77001 6.42994 3.07 6.18994 4.37C8.39994 4.13 10.62 4.13 12.83 4.37Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  opacity="0.4"
+                  d="M4.37 6.18945C3.06 6.42945 1.77 6.72945 0.509996 7.15945C0.439996 7.17945 0.379986 7.17945 0.299986 7.18945C0.119986 7.92945 0 8.70945 0 9.50946C0 10.3195 0.109986 11.0895 0.299986 11.8395C0.369986 11.8495 0.429996 11.8395 0.509996 11.8595C1.77 12.2795 3.06 12.5895 4.37 12.8295C4.13 10.6195 4.13 8.39945 4.37 6.18945Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  opacity="0.4"
+                  d="M18.7096 7.18945C18.6396 7.18945 18.5796 7.17945 18.4996 7.15945C17.2396 6.73945 15.9396 6.42945 14.6396 6.18945C14.8896 8.39945 14.8896 10.6195 14.6396 12.8195C15.9396 12.5795 17.2396 12.2795 18.4996 11.8495C18.5696 11.8295 18.6296 11.8395 18.7096 11.8295C18.8896 11.0795 19.0096 10.3095 19.0096 9.49946C19.0096 8.70945 18.8996 7.93945 18.7096 7.18945Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  opacity="0.4"
+                  d="M6.18994 14.6504C6.42994 15.9604 6.72994 17.2504 7.15994 18.5104C7.17994 18.5804 7.16994 18.6404 7.17994 18.7204C7.92994 18.9004 8.69994 19.0204 9.50996 19.0204C10.31 19.0204 11.09 18.9104 11.83 18.7204C11.84 18.6504 11.84 18.5904 11.86 18.5104C12.28 17.2504 12.59 15.9604 12.83 14.6504C11.73 14.7704 10.62 14.8604 9.50996 14.8604C8.39994 14.8504 7.28994 14.7704 6.18994 14.6504Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  opacity="0.4"
+                  d="M5.95986 5.95938C5.65986 8.31937 5.65986 10.6994 5.95986 13.0694C8.31986 13.3694 10.6999 13.3694 13.0699 13.0694C13.3699 10.7094 13.3699 8.32937 13.0699 5.95938C10.6999 5.65937 8.31986 5.65937 5.95986 5.95938Z"
+                  fill="#E9F2FE"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold">
+              Informasi tersebar di berbagai platform
+            </h3>
+            <p class="text-sm text-gray-600 mt-2">
+              Pengalaman, skill, dan karya tersebar di berbagai platform
+              sehingga sulit dilihat secara lengkap dalam satu tempat.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white text-gray-800 rounded-xl p-6 text-left shadow-md"
+          >
+            <div
+              class="w-10 h-10 flex items-center justify-center rounded-lg bg-blue-500 text-white mb-4"
+            >
+              <svg
+                class="w-6 h-6"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  d="M10 4.93066C7.93 4.93066 6.25 6.61066 6.25 8.68063C6.25 10.7106 7.84 12.3606 9.95 12.4206C9.98 12.4206 10.02 12.4206 10.04 12.4206C10.06 12.4206 10.09 12.4206 10.11 12.4206C10.12 12.4206 10.13 12.4206 10.13 12.4206C12.15 12.3506 13.74 10.7106 13.75 8.68063C13.75 6.61066 12.07 4.93066 10 4.93066Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  d="M16.7798 17.3505C14.9998 18.9905 12.6198 20.0005 9.99976 20.0005C7.37973 20.0005 4.99973 18.9905 3.21973 17.3505C3.45973 16.4405 4.10973 15.6105 5.05973 14.9705C7.78973 13.1505 12.2298 13.1505 14.9398 14.9705C15.8998 15.6105 16.5398 16.4405 16.7798 17.3505Z"
+                  fill="#E9F2FE"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold">
+              Sulit menunjukkan personal branding secara jelas
+            </h3>
+            <p class="text-sm text-gray-600 mt-2">
+              Kandidat belum memiliki cara yang jelas untuk menampilkan
+              identitas profesional dan keahlian utamanya.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white text-gray-800 rounded-xl p-6 text-left shadow-md"
+          >
+            <div
+              class="w-10 h-10 flex items-center justify-center rounded-lg bg-blue-500 text-white mb-4"
+            >
+              <svg
+                class="w-6 h-6"
+                viewBox="0 0 23 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M16.3185 0H6.6815C2.4955 0 0 2.48 0 6.64V16.2171C0 20.3771 2.4955 22.8571 6.6815 22.8571H16.3185C20.5045 22.8571 23 20.3771 23 16.2171V6.64C23 2.48 20.5045 0 16.3185 0Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  d="M18.7567 7.85031C18.7567 8.31888 18.3772 8.70745 17.8942 8.70745H11.8567C11.3851 8.70745 10.9941 8.31888 10.9941 7.85031C10.9941 7.38174 11.3851 6.99316 11.8567 6.99316H17.8942C18.3772 6.99316 18.7567 7.38174 18.7567 7.85031Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  d="M9.16554 6.7432L6.57804 9.31463C6.40554 9.48606 6.18704 9.56606 5.96854 9.56606C5.75004 9.56606 5.52004 9.48606 5.35904 9.31463L4.49654 8.45749C4.15154 8.12606 4.15154 7.57749 4.49654 7.24606C4.83004 6.91463 5.37054 6.91463 5.71554 7.24606L5.96854 7.49749L7.94654 5.53177C8.28004 5.20035 8.82054 5.20035 9.16554 5.53177C9.49904 5.8632 9.49904 6.41177 9.16554 6.7432Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  d="M18.7567 15.8503C18.7567 16.3189 18.3772 16.7074 17.8942 16.7074H11.8567C11.3851 16.7074 10.9941 16.3189 10.9941 15.8503C10.9941 15.3817 11.3851 14.9932 11.8567 14.9932H17.8942C18.3772 14.9932 18.7567 15.3817 18.7567 15.8503Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  d="M9.16554 14.7431L6.57804 17.3146C6.40554 17.4861 6.18704 17.5659 5.96854 17.5659C5.75004 17.5659 5.52004 17.4861 5.35904 17.3146L4.49654 16.4575C4.15154 16.1261 4.15154 15.5774 4.49654 15.2459C4.83004 14.9146 5.37054 14.9146 5.71554 15.2459L5.96854 15.4974L7.94654 13.5318C8.28004 13.2003 8.82054 13.2003 9.16554 13.5318C9.49904 13.8631 9.49904 14.4117 9.16554 14.7431Z"
+                  fill="#E9F2FE"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold">
+              Portfolio dan pengalaman tidak terorganisir
+            </h3>
+            <p class="text-sm text-gray-600 mt-2">
+              Pengalaman kerja dan hasil proyek belum disusun secara rapi
+              sehingga sulit dipahami oleh recruiter.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="bg-white text-gray-800 rounded-xl p-6 text-left shadow-md"
+          >
+            <div
+              class="w-10 h-10 flex items-center justify-center rounded-lg bg-blue-500 text-white mb-4"
+            >
+              <svg
+                class="w-6 h-6"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M14.18 0H5.81001C2.17001 0 0 2.17 0 5.81V14.18C0 17.82 2.17001 19.99 5.81001 19.99H14.18C17.82 19.99 19.99 17.82 19.99 14.18V5.81C19.99 2.17 17.82 0 14.18 0Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  d="M6.17032 14.7698C6.15032 14.7698 6.12033 14.7698 6.10033 14.7698C5.13033 14.6798 4.22033 14.2299 3.54033 13.5099C1.94033 11.8299 1.94033 9.0999 3.54033 7.41986L5.73033 5.11984C6.51033 4.29984 7.56033 3.83984 8.68033 3.83984C9.80033 3.83984 10.8503 4.28984 11.6303 5.11984C13.2303 6.79984 13.2303 9.5298 11.6303 11.2098L10.5403 12.3598C10.2503 12.6598 9.78033 12.6699 9.48033 12.3899C9.18033 12.0999 9.17033 11.6298 9.45033 11.3298L10.5403 10.1798C11.6003 9.0698 11.6003 7.25985 10.5403 6.15985C9.55033 5.11985 7.81033 5.11985 6.81033 6.15985L4.62033 8.4598C3.56033 9.5698 3.56033 11.3799 4.62033 12.4799C5.05033 12.9399 5.63032 13.2198 6.24032 13.2798C6.65032 13.3198 6.95032 13.6899 6.91032 14.0999C6.88032 14.4799 6.55032 14.7698 6.17032 14.7698Z"
+                  fill="#E9F2FE"
+                />
+                <path
+                  d="M11.3004 16.1599C10.1804 16.1599 9.13042 15.7099 8.35042 14.8799C6.75038 13.1999 6.75038 10.4699 8.35042 8.7899L9.44042 7.63991C9.73042 7.33991 10.2004 7.32988 10.5004 7.60988C10.8004 7.89988 10.8103 8.3699 10.5303 8.6699L9.44042 9.8199C8.38042 10.9299 8.38042 12.7399 9.44042 13.8399C10.4304 14.8799 12.1703 14.8899 13.1703 13.8399L15.3604 11.5399C16.4204 10.4299 16.4204 8.6199 15.3604 7.51989C14.9304 7.05989 14.3504 6.7799 13.7404 6.7199C13.3304 6.6799 13.0304 6.30989 13.0704 5.89989C13.1104 5.48989 13.4703 5.17991 13.8903 5.22991C14.8603 5.32991 15.7704 5.76989 16.4504 6.48989C18.0504 8.1699 18.0504 10.8999 16.4504 12.5799L14.2604 14.8799C13.4704 15.7099 12.4204 16.1599 11.3004 16.1599Z"
+                  fill="#E9F2FE"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold">Tidak memiliki halaman profesional</h3>
+            <p class="text-sm text-gray-600 mt-2">
+              Kandidat belum memiliki satu halaman profesional yang dapat
+              dibagikan untuk menunjukkan profil dan karya.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bottom Text -->
+        <p class="mt-10 text-blue-100 max-w-3xl mx-auto">
+          <span class="font-semibold text-white">Personal Website</span>
+          membantu kamu menampilkan profil profesional dalam satu halaman yang
+          rapi, mudah diakses, dan siap dibagikan ke recruiter.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="relative flex flex-col items-center text-center pt-16 pb-10 overflow-hidden"
+    >
+      <div class="relative z-10 max-w-3xl">
+        <h2
+          class="text-2xl md:text-4xl text-gray-800 font-bold font-['DM_Sans']"
+        >
+          Bangun
+          <span
+            class="font-bold bg-gradient-to-l from-[#FFD22F] via-[#FEB013] via-[#FE9900] to-[#FF4D74] bg-clip-text text-transparent leading-tight font-['DM_Sans']"
+          >
+            Personal Website
+          </span>
+          -mu Sendiri
+        </h2>
+      </div>
+
+      <p class="mt-4 text-gray-600 text-base md:text-lg leading-relaxed">
+        Bangun website profesional untuk memperkuat personal branding-mu dan
+        bisa kamu bagikan kepada recruiter.
+      </p>
+    </section>
+
+    <section class="relative px-6 py-5 overflow-hidden">
+      <div
+        class="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center"
+      >
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800">
+            Lengkapi Informasi Personal
+          </h2>
+          <p class="mt-3 text-gray-600 leading-relaxed">
+            Tambahkan berbagai informasi untuk membangun personal website yang
+            profesional.
+          </p>
+        </div>
+
+        <div class="relative flex justify-center">
+          <img
+            src="./img/web_builder/mockup_2.webp"
+            alt="goal assessment"
+            class="w-full max-w-lg object-contain scale-110"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="relative px-6 py-5 overflow-hidden">
+      <div
+        class="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center"
+      >
+        <div class="relative flex justify-center order-2 md:order-1">
+          <img
+            src="./img/web_builder/mockup_3.webp"
+            alt="goal assessment"
+            class="w-full max-w-lg object-contain scale-110"
+          />
+        </div>
+
+        <div class="order-1 md:order-2">
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800">
+            Pilih Template Website-mu
+          </h2>
+          <p class="mt-3 text-gray-600 leading-relaxed">
+            Gunakan berbagai pilihan template website untuk menampilkan profilmu
+            lebih professional.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative px-6 py-5 overflow-hidden">
+      <div
+        class="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center"
+      >
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800">
+            Lihat Perubahan Secara Langsung
+          </h2>
+          <p class="mt-3 text-gray-600 leading-relaxed">
+            Setiap informasi yang kamu tambahkan akan langsung terlihat pada
+            preview website.
+          </p>
+        </div>
+
+        <div class="relative flex justify-center">
+          <img
+            src="./img/web_builder/mockup_4.webp"
+            alt="goal assessment"
+            class="w-full max-w-lg object-contain scale-110"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="px-6 py-16 flex justify-center">
+      <div
+        class="w-full max-w-[1100px] rounded-3xl text-center text-white shadow-xl"
+        style="
+          background-image: url(&quot;./img/bg.webp&quot;);
+          background-size: cover;
+          background-position: center;
+          padding: 50px 41px;
+        "
+      >
+        <h2 class="text-2xl md:text-4xl font-bold leading-tight">
+          Jangan Tunda Kesempatanmu! Masa <br class="hidden md:block" />
+          Depanmu Dimulai Sekarang!
+        </h2>
+
+        <p class="mt-4 text-sm md:text-base opacity-90 max-w-2xl mx-auto">
+          Dapatkan pengalaman kerja nyata, bangun portfolio yang membuatmu
+          menonjol, dan terhubung dengan peluang kerja. Semua hanya dengan Rp
+          180.000
+        </p>
+
+        <div class="mt-6">
+          <a
+            href="#"
+            class="inline-block bg-white text-gray-800 px-6 py-3 rounded-xl text-sm font-semibold shadow-md hover:scale-105 transition"
+          >
+            Daftar & Mulai Karirmu Sekarang!
+          </a>
+        </div>
+
+        <p class="mt-3 text-xs opacity-80">
+          Slot Terbatas! Harga Promo Khusus Bulan Ini!
+        </p>
+      </div>
+    </section>
+
+    <footer class="bg-black text-gray-300 relative overflow-hidden">
+      <div
+        class="absolute inset-0 opacity-20 bg-[url('./img/stars.webp')]"
+      ></div>
+
+      <div class="relative max-w-6xl mx-auto px-6 py-14">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+          <div>
+            <div class="flex items-center">
+              <img
+                src="./img/logo2.webp"
+                alt="Socialvit Logo"
+                class="h-8 object-contain"
+              />
+            </div>
+
+            <p class="mt-3 text-sm leading-relaxed">
+              A social learning platform powered by AI, with job guarantee
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-white font-semibold mb-4">Fitur</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:text-white">CV Analyzer</a></li>
+              <li><a href="#" class="hover:text-white">Leaderboard</a></li>
+              <li><a href="#" class="hover:text-white">Lowongan Kerja</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-white font-semibold mb-4">Jelajahi</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="#" class="hover:text-white">Contoh Analisa CV</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white">Langkah - Langkah</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white">Terkoneksi ke Lowongan</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white">Testimoni Pengguna</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-white font-semibold mb-4">Kontak</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:text-white">Whatsapp</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4"
+        >
+          <p class="text-sm text-gray-500 text-center md:text-left">
+            Copyright ©2025 Socialvit, All Rights Reserved
+          </p>
+
+          <div class="flex items-center gap-4">
+            <a href="#" class="hover:text-white"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#" class="hover:text-white"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="#" class="hover:text-white"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="hover:text-white"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
